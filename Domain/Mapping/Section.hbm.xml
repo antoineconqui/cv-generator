@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping namespace="Domain" assembly="Domain" xmlns="urn:nhibernate-mapping-2.2">
+  <class table="section" name="Section">
+    <id name="Id" type="int" column="id">
+      <generator class="native"/>
+    </id>
+    <property name="Titre" column="titre" not-null="false"/>
+    <property name="IdCv" column="id_cv" not-null="false" type="int"/>
+    <property name="IdUtilisateur" column="id_utilisateur" not-null="false" type="int"/>
+    <property name="Active" column="active" not-null="false" type="int"/>
+  </class>
+</hibernate-mapping>

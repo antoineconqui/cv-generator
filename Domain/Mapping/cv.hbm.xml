@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+  <hibernate-mapping namespace="Domain" assembly="Domain" xmlns="urn:nhibernate-mapping-2.2">
+    <class table="cv" name="Cv">
+      <id name="Id" type="int" column="id">
+        <generator class="native"/>
+      </id>
+      <property name="Titre" column="titre" not-null="true"/>
+      <property name="IdUtilisateur" column="id_utilisateur" not-null="true" type="int"/>
+      <property name="Job" column="job" not-null="false"/>
+    </class>
+  </hibernate-mapping>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping namespace="Domain" assembly="Domain" xmlns="urn:nhibernate-mapping-2.2">
+  <class table="utilisateur" name="Utilisateur">
+    <id name="Id" column="id" type="int">
+      <generator class="native"/>
+    </id>
+    <property name="Nom" column="nom" not-null="false"/>
+    <property name="Prenom" column="prenom" not-null="false"/>
+    <property name="Description" column="description" not-null="false"/>
+    <property name="Mail" column="mail" not-null="false"/>
+    <property name="Tel" column="tel" not-null="false"/>
+    <property name="Adresse" column="adresse" not-null="false"/>
+  </class>
+</hibernate-mapping>

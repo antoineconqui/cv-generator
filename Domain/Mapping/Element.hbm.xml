@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+  <hibernate-mapping namespace="Domain" assembly="Domain" xmlns="urn:nhibernate-mapping-2.2">
+    <class table="element" name="Element">
+      <id name="Id" type="int" column="id">
+        <generator class="native"/>
+      </id>
+      <property name="Titre" column="titre" not-null="true"/>
+      <property name="Debut" column="date_deb" not-null="false"/>
+      <property name="Fin" column="date_fin" not-null="false" />
+      <property name="Lieu" column="lieu" not-null="false"/>
+      <property name="Competences" column="competences" not-null="false"/>
+      <property name="Active" column="active" not-null="true"/>
+      <property name="Hobbies" column="hobbies" not-null="true"/>
+      <property name="IdSection" column="id_section" not-null="false"/>
+      <property name="IdCv" column="id_cv" not-null="false"/>
+      <property name="IdUtilisateur" column="id_utilisateur" not-null="true"/>
+      
+    </class>
+  </hibernate-mapping>
